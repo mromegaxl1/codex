@@ -1,0 +1,41 @@
+body {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 4em 8em 1fr 4em;
+    grid-gap: 1em;
+  }
+  
+  aside {
+    background: hsl(200,100%,60%);
+    grid-row: 3;
+    grid-column: 1 / span 3;
+  }
+  
+  main {
+    background: hsl(100,100%,60%);
+    grid-row: 3;
+    grid-column: span 9;
+  }
+  
+  footer {
+    background: hsl(300,100%,60%);  
+    grid-column: 1 / span 12;
+  }
+  
+  header {
+    background: hsl(60,100%,60%); 
+    grid-column: 1 / span 12;
+  }
+  
+
+  .feature {
+    background: hsl(270,100%,70%);
+    grid-column: span 4;
+  }
+  
+  .block {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
